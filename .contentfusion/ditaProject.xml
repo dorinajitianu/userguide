@@ -3,4 +3,13 @@
     <context id="wQuKaKeFciOnSxw" name="user">
         <input href="../DITA/UserManual.ditamap"/>
     </context>
+    <publication id="webhelp" transtype="webhelp-responsive"/>
+    <deliverable id="d-user-1727848880467" name="user">
+        <context idref="wQuKaKeFciOnSxw"/>
+        <output href="webhelp-output"/>
+        <publication idref="webhelp">
+            <param name="webhelp.publishing.template" value=".contentfusion/templates/oxy"/>
+            <param name="editlink.enable.edit.in.content.fusion.workspace" value="false"/>
+        </publication>
+    </deliverable>
 </project>
