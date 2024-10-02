@@ -1,8 +1,49 @@
 /*#
+@colors&{"titlesAccentColor":"#494949","labelsAccentColor":"#7b7a7a","linksAccentColor":"#2372de","backgroundAccentColor":"#dce5f2","isDefault":true}&colors@
 @info@STYLES BASKET SELECTIONS METADATA@info@
 @name&styles_basket&name@
-@aspects&wh-tiles&aspects@
-@info@WARNING: PLEASE DON'T MODIFY THIS FILE. MODIFICIATION CAN CAUSE UPLOADING ERRORS@info@
+@aspects&wh-tiles,theme-color-mechano&aspects@
+@info@WARNING: PLEASE DON'T MODIFY THIS FILE. MODIFICATION CAN CAUSE UPLOADING ERRORS@info@
+@info@TIP: YOU CAN USE custom.css TO ADD CUSTOM SELECTORS.@info@
 #*/
+/* Bold selection in Publication TOC. WebHelp only. */
+@media screen {
+  .wh_publication_toc .active > .topicref a {
+    font-weight: bold;
+  }
+}
+/*theme-color-mechano*/
+.topictitle1,
+.topictitle2,
+.topictitle3,
+.topictitle4,
+.topictitle5,
+.topictitle6,
+*[class~='front-page/front-page-title'],
+*[class~="toc/title"],
+*[class~="placeholder/figurelist"] > *[class~="topic/title"],
+*[class~="placeholder/tablelist"] > *[class~="topic/title"],
+*[class~="index/groups"]::before {
+  color: #5185cb;
+}
+*[class~='topic/shortdesc']:before {
+  color: #cbcb85;
+}
+*[class~='topic/xref'],
+*[class~='topic/link'] {
+  color: #6facff;
+}
+.related-links a,
+.related-links a:visited {
+  color: #6facff;
+}
+a,
+a:hover,
+a:visited {
+  color: #6facff;
+}
+*[class~='topic/table'] th {
+  background-color: #333333;
+}
 /*wh-tiles*/
 
